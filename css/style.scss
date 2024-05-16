@@ -1,0 +1,672 @@
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// /phone styles/
+:root{
+	--primary-color: white !;
+	--secondary-color: black;
+}
+.night{
+* , body{
+background-color: black !important;
+	color: var(--primary-color);
+}
+}
+
+
+*{
+	overflow-x: hidden;
+
+	margin: 0;
+	padding: 0;
+	background: var(--primary-color);
+	color: var(--secondary-color);
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mobile-navbar{
+	display: block;
+	display: flex;
+	justify-content:space-between ;
+	align-items: center;
+	padding: 0 0em;
+	.hamburger{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		border: 2px solid purple;
+		height: 4rem;
+		width: 4rem;
+		gap: 5px;
+		margin: 15px;
+		.line{
+			background: #802280;
+			width: 80%;
+			height: 2px;
+		}
+	}
+
+
+}
+.pc-navbar{
+	display: none;
+}
+#banner{
+	margin-top: 10px;
+	.first-text{
+		gap: 50px;
+		padding-top: 1rem;
+		width:100% ;
+		.buttons{
+			
+			display: flex;
+			flex-direction: row;
+			gap: 15px;
+			height: 50px;
+			.one{
+				button{
+				background:#802280 ;
+				color: var(--primary-color);
+				border: none;
+				height: 40px;
+				
+				}
+
+			}
+			.two{
+				button{
+                background:white;
+                color:var(--secondary-color);
+                border: 3px solid #802280;
+				height: 40px;
+                
+                }
+
+			}
+		}
+		
+	}
+	.second{
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		.wiz{
+			display: flex;
+			flex-direction: row;
+			.car{
+				img{
+					width: 25px;
+					height: 25px;
+				}
+			}
+
+		}
+		.wie{
+			display: flex;
+			flex-direction: row;
+			.benz{
+				img{
+					width: 25px;
+					height: 25px;
+
+				}
+			}
+		}
+	}
+	.pictures{
+		
+		display: flex;
+		flex-direction: row;
+		gap: 20;
+		
+		.image1{
+		width: 200px;
+		height: 400px;
+		padding-top: 60px;
+		img{
+			width: 7rem;
+			height: 200px;
+		}
+		}
+		.image2{
+		width: 200px;
+		height: 400px;
+		img{
+			width: 7rem;
+			height: 200px;
+		}
+		}
+		.image3{
+		width: 200px;
+		height: 400px;
+		padding-top: 60px;
+		img{
+			width: 7rem;
+			height: 200px;
+		}
+		}
+		.image4{
+		width: 200px;
+		height: 400px;
+		img{
+			width: 7rem;
+			height: 200px;
+		}
+		}
+
+	}
+    
+
+}
+#about{
+	
+	.about{
+		.writtings{
+			
+			width: 34rem;
+	
+		}
+		// .gallery{
+		// 	.pic-2{
+		// 		width: 700px;
+		// 		he
+				
+		// 	}
+			
+			}
+			
+		}
+		.snap{
+			img{
+				height: 200px;
+				width: 85%;
+
+			}
+			
+			}
+		
+				
+		
+		.pen{
+			.gap{
+				button{
+					background-color: #802280;
+					color: var(--primary-color);
+					border: none;
+				}
+		}
+
+	}
+
+#services{
+	padding-top: 20px;
+	.container{
+		
+		.photos{
+			display: flex;
+			
+			padding: 10px;
+			gap: 10px;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			
+			.girl{
+				position: relative;
+				
+				img{
+					height: 400px;
+					width: 200px;
+					object-position: top;
+					object-fit: cover;
+				}
+				.tex{
+					position: absolute;
+					top: 5px;
+					background: purple;
+					align-items: center;
+					p{
+					 align-items: baseline;
+					 text-align: center;
+					 color: aqua;
+					}
+					 
+				 }
+			}
+			.card-one{
+				img{
+					width: 200px;
+				}
+				
+			}
+			.third{
+				img{
+				
+					height: 300px;
+					width: 200px;
+				}
+			}
+
+			.service-card{
+				width: 200px;
+				height: 300px;
+			}
+	}
+
+}
+}
+#clients{
+	
+	.container{
+		.row{
+			.farai{
+				
+				img{
+					width: 300px;
+					height: 300px;
+				}
+
+			}
+			.miranda{
+				img{
+					width: 450px;
+					height: 350px;
+				}
+			}
+		}
+	}
+}
+#instagram{
+	.seen {
+		h3{
+			display: flex;
+			justify-content: center;
+			padding-top: 30px;
+		}
+	}
+	.container{
+		justify-content: center;
+		
+		.smiles{
+			justify-content: center;
+			display: flex;
+			gap: 6px;
+			img{
+				width:7rem ;
+				height: 200px;
+			}
+			.two{
+				padding-top: 70px;
+			}
+			.four{
+				padding-top: 70px;
+			}
+			.five{
+				padding-top: 70px;
+			}
+		}
+		.tigzozo{
+			padding-top: 20px;
+			padding-left: 500px;
+			.ti{
+				font-weight: 100px;
+			}
+			.us{
+				button{
+					background: purple;
+					color:var(--primary-color);
+					border: none;
+				}
+			}
+			
+			
+		}
+
+	}
+
+}
+#mobileFooter{
+	padding: 1rem 0;
+	background: #802280;
+	.container{
+	.p{
+		color: white;
+		text-decoration: underline;
+	}
+	.links{
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+		a{
+			text-decoration: none;
+			color: white;
+		}
+	}
+		.top{
+			padding-bottom: 2rem;
+			.left{
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+				.logo{
+					height: 2rem;
+					width: 5rem;
+				}
+				.text{
+					
+					p{
+						padding: 0;
+						color: white;
+					}
+
+					img{
+						height: 1rem;
+					}
+				}
+				.icons{
+					display: flex;
+					gap: 7px;
+					img{
+						height: 1.5rem;
+						
+					}
+				}
+			}
+			
+			
+			}
+			.below{
+				.right{
+					.touch{
+						.information{
+							display: flex;
+							gap: 7px;
+							align-items: center;
+							img{
+								height: 25px;
+							}
+							p{
+								color: white;
+								padding-top: 14px;
+							}
+						}
+					}
+				}
+			}
+
+
+		}
+	}
+
+
+
+// .footer{
+// 	width: 100%;
+// 	background: #802280;
+// 	color: var(--primary-color);
+	
+	
+// 		.container{
+// 		.row{
+			
+// 				.left{
+// 				flex-direction: column;
+				
+// 					.first{
+// 						.icons{
+// 							img{
+// 								height: 20px;
+// 								width: 20px;
+// 							}
+// 						}
+// 					}
+					
+					
+// 					color: white;
+					
+	
+// 				}
+// 				.right{
+				
+					
+					
+					
+// 					color: white;
+// 					.fourth{
+// 						img{
+// 							width: 20px;
+// 							height: 20px;
+// 						}
+// 					}
+					
+// 				}
+	
+// 			}
+// 	}
+// 	}
+	
+
+// #footer{
+// 	background: #802280;
+// 	width: 100%;
+// 	padding: 1 rem 0;
+// 	.contents{
+// 		background: transparent;
+// 		
+// 		display: flex;
+// 		align-items: center;
+// 		gap: 90px;
+// 		.tigs{
+// 			flex-direction: column;
+// 			.copy{
+// 				img{
+// 					width: 25px;
+// 					height: 25px;
+// 				}
+// 			}
+			
+
+
+// 		}
+// 		.cute{
+// 			.finger{
+// 				display: flex;
+// 				img{
+// 					width: 25px;
+// 					height: 25px;
+// 				}
+// 			}
+// 			.com{
+// 				display: flex;
+//                 img{
+//                     width: 25px;
+//                     height: 25px;
+//                 }
+// 			}
+// 			.street{
+// 				display: flex;
+// 			}
+			
+
+// 		}
+		
+
+		
+
+
+// 	}
+
+// }
+
+
+
+
+
+	
+
+
+
+
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 568px) {  
+
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) { 
+	.mobile-navbar{
+		display: none;
+	} 
+
+	#services {
+		.container{
+	
+	.photos{
+		flex-direction: row;
+		.service-card{
+			width: 300px;
+			height: 500px;
+			img{
+				width: 100%;
+				object-fit: cover;
+				height: 100%;
+			}
+		}
+	}
+	
+
+		}
+	}
+	.pc-navbar{
+		display: block;
+		.flex-container{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.darkmode{
+				#night{
+					width: 30px;
+					height: 30px;
+				}
+
+			}
+
+			ul{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 20px;
+				font-weight: 600;
+
+				li{
+					color: var(--secondary-color);
+					font-size: 20px;
+
+					span{
+						color: rgb(128,34, 140);
+					}
+				}
+
+				.dark-icon{
+					height: 30px;
+					width: 30px;
+					background: var(--secondary-color);
+					border-radius: 50%;
+				}
+				
+				}
+			}
+		}
+	}
+	
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
+
+
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+
+/* Set width to make card deck cards 100% width */
+@media (max-width: 950px) { 
+
+}

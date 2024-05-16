@@ -1,0 +1,424 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: white !;
+  --secondary-color: black;
+}
+
+.night *, .night body {
+  background-color: black !important;
+  color: var(--primary-color);
+}
+
+* {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mobile-navbar {
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0em;
+}
+.mobile-navbar .hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid purple;
+  height: 4rem;
+  width: 4rem;
+  gap: 5px;
+  margin: 15px;
+}
+.mobile-navbar .hamburger .line {
+  background: #802280;
+  width: 80%;
+  height: 2px;
+}
+
+.pc-navbar {
+  display: none;
+}
+
+#banner {
+  margin-top: 10px;
+}
+#banner .first-text {
+  gap: 50px;
+  padding-top: 1rem;
+  width: 100%;
+}
+#banner .first-text .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  height: 50px;
+}
+#banner .first-text .buttons .one button {
+  background: #802280;
+  color: var(--primary-color);
+  border: none;
+  height: 40px;
+}
+#banner .first-text .buttons .two button {
+  background: white;
+  color: var(--secondary-color);
+  border: 3px solid #802280;
+  height: 40px;
+}
+#banner .second {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#banner .second .wiz {
+  display: flex;
+  flex-direction: row;
+}
+#banner .second .wiz .car img {
+  width: 25px;
+  height: 25px;
+}
+#banner .second .wie {
+  display: flex;
+  flex-direction: row;
+}
+#banner .second .wie .benz img {
+  width: 25px;
+  height: 25px;
+}
+#banner .pictures {
+  display: flex;
+  flex-direction: row;
+  gap: 20;
+}
+#banner .pictures .image1 {
+  width: 200px;
+  height: 400px;
+  padding-top: 60px;
+}
+#banner .pictures .image1 img {
+  width: 7rem;
+  height: 200px;
+}
+#banner .pictures .image2 {
+  width: 200px;
+  height: 400px;
+}
+#banner .pictures .image2 img {
+  width: 7rem;
+  height: 200px;
+}
+#banner .pictures .image3 {
+  width: 200px;
+  height: 400px;
+  padding-top: 60px;
+}
+#banner .pictures .image3 img {
+  width: 7rem;
+  height: 200px;
+}
+#banner .pictures .image4 {
+  width: 200px;
+  height: 400px;
+}
+#banner .pictures .image4 img {
+  width: 7rem;
+  height: 200px;
+}
+
+#about .about .writtings {
+  width: 34rem;
+}
+
+.snap img {
+  height: 200px;
+  width: 85%;
+}
+
+.pen .gap button {
+  background-color: #802280;
+  color: var(--primary-color);
+  border: none;
+}
+
+#services {
+  padding-top: 20px;
+}
+#services .container .photos {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#services .container .photos .girl {
+  position: relative;
+}
+#services .container .photos .girl img {
+  height: 400px;
+  width: 200px;
+  -o-object-position: top;
+     object-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#services .container .photos .girl .tex {
+  position: absolute;
+  top: 5px;
+  background: purple;
+  align-items: center;
+}
+#services .container .photos .girl .tex p {
+  align-items: baseline;
+  text-align: center;
+  color: aqua;
+}
+#services .container .photos .card-one img {
+  width: 200px;
+}
+#services .container .photos .third img {
+  height: 300px;
+  width: 200px;
+}
+#services .container .photos .service-card {
+  width: 200px;
+  height: 300px;
+}
+
+#clients .container .row .farai img {
+  width: 300px;
+  height: 300px;
+}
+#clients .container .row .miranda img {
+  width: 450px;
+  height: 350px;
+}
+
+#instagram .seen h3 {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+#instagram .container {
+  justify-content: center;
+}
+#instagram .container .smiles {
+  justify-content: center;
+  display: flex;
+  gap: 6px;
+}
+#instagram .container .smiles img {
+  width: 7rem;
+  height: 200px;
+}
+#instagram .container .smiles .two {
+  padding-top: 70px;
+}
+#instagram .container .smiles .four {
+  padding-top: 70px;
+}
+#instagram .container .smiles .five {
+  padding-top: 70px;
+}
+#instagram .container .tigzozo {
+  padding-top: 20px;
+  padding-left: 500px;
+}
+#instagram .container .tigzozo .ti {
+  font-weight: 100px;
+}
+#instagram .container .tigzozo .us button {
+  background: purple;
+  color: var(--primary-color);
+  border: none;
+}
+
+#mobileFooter {
+  padding: 1rem 0;
+  background: #802280;
+}
+#mobileFooter .container .p {
+  color: white;
+  text-decoration: underline;
+}
+#mobileFooter .container .links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+#mobileFooter .container .links a {
+  text-decoration: none;
+  color: white;
+}
+#mobileFooter .container .top {
+  padding-bottom: 2rem;
+}
+#mobileFooter .container .top .left {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#mobileFooter .container .top .left .logo {
+  height: 2rem;
+  width: 5rem;
+}
+#mobileFooter .container .top .left .text p {
+  padding: 0;
+  color: white;
+}
+#mobileFooter .container .top .left .text img {
+  height: 1rem;
+}
+#mobileFooter .container .top .left .icons {
+  display: flex;
+  gap: 7px;
+}
+#mobileFooter .container .top .left .icons img {
+  height: 1.5rem;
+}
+#mobileFooter .container .below .right .touch .information {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+#mobileFooter .container .below .right .touch .information img {
+  height: 25px;
+}
+#mobileFooter .container .below .right .touch .information p {
+  color: white;
+  padding-top: 14px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap 4 breakpoints
+*/
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .mobile-navbar {
+    display: none;
+  }
+  #services .container .photos {
+    flex-direction: row;
+  }
+  #services .container .photos .service-card {
+    width: 300px;
+    height: 500px;
+  }
+  #services .container .photos .service-card img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+  }
+  .pc-navbar {
+    display: block;
+  }
+  .pc-navbar .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .pc-navbar .flex-container .darkmode #night {
+    width: 30px;
+    height: 30px;
+  }
+  .pc-navbar .flex-container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+  }
+  .pc-navbar .flex-container ul li {
+    color: var(--secondary-color);
+    font-size: 20px;
+  }
+  .pc-navbar .flex-container ul li span {
+    color: rgb(128, 34, 140);
+  }
+  .pc-navbar .flex-container ul .dark-icon {
+    height: 30px;
+    width: 30px;
+    background: var(--secondary-color);
+    border-radius: 50%;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+/* Extra large devices (large desktops, 1200px and up) */
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Custom media queries
+*/
+/* Set width to make card deck cards 100% width *//*# sourceMappingURL=style.css.map */
